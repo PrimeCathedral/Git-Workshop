@@ -6,14 +6,11 @@ class PrecalcOperations:
     
     def factorial(self, n):
         """Returns the factorial of a non-negative integer n."""
-        if n == 0 or n == 1:
-            return 1
-        else:
-            return n * self.factorial(n) # First commit: This argument looks funny
+        # Implement this one yourself!
     
     def power(self, base, exponent):
         """Returns base raised to the power of exponent."""
-        return base ** exponent
+        return base ** base # This looks kind of funy
     
     def quadratic_formula(self, a, b, c):
         """Solves a quadratic equation ax^2 + bx + c = 0 and returns the roots."""
@@ -34,10 +31,6 @@ class PrecalcOperations:
     def lcm(self, a, b):
         """Returns the least common multiple of a and b."""
         return abs(a * b) // self.gcd(a, b)
-    
-    def fibonacci(self, n):
-        """Returns the nth Fibonacci number."""
-        pass  # Students should implement this
     
 # Example usage
 if __name__ == "__main__":
