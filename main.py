@@ -9,7 +9,7 @@ class PrecalcOperations:
         if n == 0 or n == 1:
             return 1
         else:
-            return n * self.factorial(n - 1)
+            return n * self.factorial(n) # First commit: This argument looks funny
     
     def power(self, base, exponent):
         """Returns base raised to the power of exponent."""
@@ -34,6 +34,10 @@ class PrecalcOperations:
     def lcm(self, a, b):
         """Returns the least common multiple of a and b."""
         return abs(a * b) // self.gcd(a, b)
+    
+    def fibonacci(self, n):
+        """Returns the nth Fibonacci number."""
+        pass  # Students should implement this
     
 # Example usage
 if __name__ == "__main__":
